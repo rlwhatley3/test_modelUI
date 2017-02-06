@@ -1,0 +1,129 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.navbar-xs .navbar-nav > li > a {
+  padding-top: 2px !important;
+  padding-bottom:0 !important;
+  height: 22px;
+}
+
+.navbar-xs {
+  min-height:28px;
+  height: 28px;
+
+}
+.navbar-xs .navbar-brand {
+  padding-top: 2px !important;
+  padding-bottom: 0 !important;
+}
+
+
+.navbar-toggle-xs {
+  height: 20px;
+  margin-top: 5px;
+}
+
+.navbar-xs .navbar-header button {
+  margin-top:3px;
+  margin-bottom: 10px;
+}
+
+
+
+.navbar-primary .navbar { background:#9f58b5; border-bottom:none; }
+.navbar-primary .navbar .nav > li > a {color: #501762;}
+.navbar-primary .navbar .nav > li > a:hover {color: #fff; background-color: #8e49a3;}
+.navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover {color: #fff; background-color: #501762;}
+.navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover {}
+.navbar-primary .navbar .nav > li.dropdown.open > a {color: #fff;background-color: #9f58b5;border-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar .nav > li.dropdown.open > a .caret {border-top-color: #fff;}
+.navbar-primary .navbar .navbar-brand {color:#fff;}
+.navbar-primary .navbar .nav.pull-right {margin-left: 10px; margin-right: 0;}
+.navbar-xs .navbar-primary .navbar { min-height:28px; height: 28px; }
+.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; }
+.navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 28px; }
+.navbar-sm .navbar-primary .navbar { min-height:40px; height: 40px; }
+.navbar-sm .navbar-primary .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 40px; }
+.navbar-sm .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 40px; }

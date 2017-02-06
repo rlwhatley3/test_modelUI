@@ -1,0 +1,20 @@
+<section>
+  <div class="col-xs-6">
+    <div>{{vm.character.name}}</div>
+    <div ng-repeat="key in vm.attr_keys" style="margin-bottom: 25px;">
+      <legend>{{key}}</legend>
+      <small>{{vm.character.base_ability_score[key]}}</small>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="well">
+      <strong>{{vm.character.primary_class.name | uppercase}}</strong>
+      <p>{{vm.character.primary_class.description}}</p>
+    </div>
+    <div class="well">
+      <strong>{{vm.character.race.name | uppercase}}</strong>
+      <p>{{vm.character.race.description}}</p>
+    </div>
+  </div>
+
+</section>

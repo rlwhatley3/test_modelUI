@@ -1,0 +1,28 @@
+<section>
+  <div class="row">
+    <div class=col-xs-6>
+      <form name="character_form">
+        <legend>Name</legend>
+        <input type="text" ng-model="vm.character.name" ng-blur="vm.createBaseCharacter()">
+        <div ng-repeat="key in vm.att_keys">
+          <legend>{{key}}</legend>
+          <input type="number" ng-model="vm.character.base_ability_score[key]">
+        </div>
+      </form>
+    </div>
+    <div class="col-xs-6">
+      <div class="row">
+        {{vm.character.name}}</br>
+        <button ng-repeat="klass in vm.klasses" class="btn btn-sm btn-info" ng-click="vm.setKlass(klass)" style="margin-left: 20px;">{{klass.name}}</button></br>
+        {{vm.character.primary_class.name}}</br>
+        {{vm.character.primary_class.description}}
+      </div>
+      <div class="row">
+        <button ng-repeat="race in vm.races" class="btn btn-sm btn-warning" ng-click="vm.setRace(race)" style="margin-top: 10px; margin-left: 20px;">{{race.name}}</button></br>
+        {{vm.character.race.name}}</br>
+        {{vm.character.race.description}}
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-sm btn-success" ng-click="vm.submit()" style="margin-top:20px;">Submit</button>
+</section>
